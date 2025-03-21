@@ -73,6 +73,7 @@
     </Content>
     <Content Include="App_Themes\Theme1\UI.css" />
     <Content Include="Properties\WebForm1.aspx" />
+    <Content Include="Shared\Database.txt" />
     <Content Include="Web.config" />
     <Content Include="index.aspx" />
   </ItemGroup>
