@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UserIterface.master.cs" Inherits="LibrarySystem.UserIterface" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="App_Themes/Theme1/UI.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="header">
+    <nav class="navbar">
+        <div class="logo"> Library</div>
+
+        <div class="search-container">
+            <asp:TextBox ID="Searchtxt" runat="server" Placeholder="Search books here..." CssClass="search"></asp:TextBox>
+            <asp:Button ID="SearchBtn" runat="server" Text="🔍" CssClass="search-btn" />
+        </div>
+
+        <div class="nav-buttons">
+            <asp:Button ID="LoginBtn" runat="server" Text="Login" CssClass="btn loginbtn"/>
+            <asp:Button ID="RegisterBtn" runat="server" Text="Sign Up" CssClass="btn registerbtn"/>
+        </div>
+    </nav>
+</div>
+
+        <div class="sidemaincont">
+            <div>
+    <aside class="sidebar">
+    <nav class="sidebar-nav">
+        <a href="Default.aspx" class="sidebar-link">🏠 Home</a>
+        <a href="SearchBooks.aspx" class="sidebar-link">🔍 Search Books</a>
+        <a href="Reviews.aspx" class="sidebar-link">⭐ Reviews</a>
+        <a href="Contact.aspx" class="sidebar-link">📞 Contact</a>
+        <a href="AdminDashboard.aspx" class="sidebar-link">⚙️ Admin Panel</a>
+    </nav>
+</aside>
+
+            </div>
+            <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            </div>
+            
+        </div>
+        <footer style="background-color: #333; color: white; padding: 20px 0; text-align: center;">
+    <div class="container">
+        <p style="font-size: 18px; font-weight: bold;">Library Book Availability Checker</p>
+        <p>📚 A Project by Atmiya University Students | Hackathon 2025</p>
+
+        <div>
+            <a href="Default.aspx" style="color: #ddd; margin: 0 15px; text-decoration: none;">Home</a> |
+            <a href="SearchBooks.aspx" style="color: #ddd; margin: 0 15px; text-decoration: none;">Search Books</a> |
+            <a href="Reviews.aspx" style="color: #ddd; margin: 0 15px; text-decoration: none;">Reviews</a> |
+            <a href="Contact.aspx" style="color: #ddd; margin: 0 15px; text-decoration: none;">Contact Us</a>
+        </div>
+
+        <p style="margin-top: 10px;">📍 Atmiya University Library | 📞 Support: +91 82006 16888 | 📧 Email: library@atmiya.edu</p>
+
+        <p style="margin-top: 10px; font-size: 14px; opacity: 0.8;">
+            © 2025 Atmiya University. All Rights Reserved.  
+        </p>
+    </div>
+</footer>
+
+    </form>
+</body>
+</html>
