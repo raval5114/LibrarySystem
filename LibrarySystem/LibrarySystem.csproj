@@ -67,13 +67,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Library.mdf" />
-    <Content Include="App_Data\Library_log.ldf">
-      <DependentUpon>Library.mdf</DependentUpon>
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
     <Content Include="App_Themes\Theme1\UI.css" />
     <Content Include="Properties\WebForm1.aspx" />
     <Content Include="Shared\Database.txt" />
+    <Content Include="Shared\styleSheet.txt" />
     <Content Include="Web.config" />
     <Content Include="index.aspx" />
     <Content Include="WebForm2.aspx" />
