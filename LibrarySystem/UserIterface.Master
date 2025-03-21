@@ -7,11 +7,11 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-    <link rel="stylesheet" href="App_Themes/Theme1/UI.css" />
+    <Link rel="stylesheet" href="App_Themes/Theme1/UI.css" />
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="header">
+        
     <nav class="navbar">
         <div class="logo"> Library</div>
 
@@ -25,7 +25,7 @@
             <asp:Button ID="RegisterBtn" runat="server" Text="Sign Up" CssClass="btn registerbtn"/>
         </div>
     </nav>
-</div>
+
 
         <div class="sidemaincont">
             <div>
