@@ -1,4 +1,5 @@
-﻿/* General Reset */
+﻿
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +12,7 @@
     background: #1E3A8A; /* Elegant Green */
     padding: 15px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    height:80px;
+    height: 80px;
 }
 
 /* Navbar */
@@ -39,9 +40,10 @@
     padding: 5px;
     border-radius: 25px;
 }
-.search::placeholder{
-    font-size:15px;
-    font-style:italic;
+
+.search::placeholder {
+    font-size: 15px;
+    font-style: italic;
 }
 
 .search {
@@ -76,8 +78,8 @@
 }
 
 .loginbtn {
-    background:#1E3A8A;
-    color:white;
+    background: #1E3A8A;
+    color: white;
     border: 1px solid #2E7D32;
 }
 
@@ -156,6 +158,7 @@
         margin: 5px 0;
     }
 }
+
 .sidemaincont {
     display: flex;
 }
@@ -166,7 +169,6 @@
     z-index: 1;
     background: #fff;
     position: fixed;
-    top: 120;
     left: 0;
     overflow-y: auto;
     padding-top: 20px;
@@ -219,7 +221,7 @@
 @media (max-width: 768px) {
     .sidebar {
         width: 70px;
-        height:420px;
+        height: 420px;
         align-items: center;
     }
 

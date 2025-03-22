@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UserIterface.master.cs" Inherits="LibrarySystem.UserIterface" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ForAdmin.master.cs" Inherits="LibrarySystem.ForAdmin" %>
 
 <!DOCTYPE html>
 
@@ -7,11 +7,11 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-    <Link rel="stylesheet" href="App_Themes/Theme1/UI.css" />
+    <link rel="stylesheet" href="App_Themes/Theme1/UI.css" />
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class ="header">
+            <div class ="header">
     <nav class="navbar">
         <div class="logo"> Library</div>
 
@@ -32,31 +32,24 @@
     <aside class="sidebar">
     <nav class="sidebar-nav">
         <a href="Default.aspx" class="sidebar-link">Home</a>
-        <a href="SearchBooks.aspx" class="sidebar-link"> Search Books</a>
-        <a href="Reviews.aspx" class="sidebar-link"> Reviews</a>
-      <asp:Menu ID="Menu1" runat="server" Orientation="Vertical" CssClass="sidebar-menu">
-    <Items>
-        <asp:MenuItem Text="Category" Value="Category">
-            <asp:MenuItem Text="Spiritual" Value="Spiritual"></asp:MenuItem>
-            <asp:MenuItem Text="Psychology" Value="Psychology"></asp:MenuItem>
-            <asp:MenuItem Text="Business" Value="Business"></asp:MenuItem>
-            <asp:MenuItem Text="Story" Value="Story"></asp:MenuItem>
-        </asp:MenuItem>
-    </Items>
-</asp:Menu>
+        <a href="SearchBooks.aspx" class="sidebar-link"> Add Books</a>
+        <a href="Reviews.aspx" class="sidebar-link">Book Management</a>
+        <a href="Reviews.aspx" class="sidebar-link"> View Users</a>
+     
       
     </nav>
 </aside>
-</div>
-            </div>
-            <div class="maincontent">
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
+
             </div>
             
-        
-        <footer>
-    <div class="footer">
+
+        <div class="maincontent">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+</div>
+         <footer>
+     <div class="footer">
         <p style="font-size: 18px; font-weight: bold;">Library Book Availability Checker</p>
         <p>📚 A Project by Atmiya University Students | Hackathon 2025</p>
 
@@ -69,12 +62,11 @@
 
         <p >📍 Atmiya University Library | 📞 Support: +91 82006 16888 | 📧 Email: library@atmiya.edu</p>
 
-        <p class="copyright">
+        <p >
             © 2025 Atmiya University. All Rights Reserved.  
         </p>
     </div>
 </footer>
-
     </form>
 </body>
 </html>

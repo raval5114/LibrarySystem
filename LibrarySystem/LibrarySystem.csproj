@@ -67,19 +67,45 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Database1.mdf" />
-    <Content Include="App_Data\Database1_log.ldf">
-      <DependentUpon>Database1.mdf</DependentUpon>
+    <Content Include="Admin\Add_Book.aspx" />
+    <Content Include="App_Data\Library.mdf" />
+    <Content Include="App_Data\Library_log.ldf">
+      <DependentUpon>Library.mdf</DependentUpon>
     </Content>
+    <Content Include="App_Themes\Theme1\Admindesign.css" />
     <Content Include="App_Themes\Theme1\UI.css" />
+    <Content Include="Booksdisplay\Bussinessbooks.aspx" />
     <Content Include="Properties\WebForm1.aspx" />
     <Content Include="Shared\Database.txt" />
     <Content Include="Shared\styleSheet.txt" />
     <Content Include="Web.config" />
     <Content Include="index.aspx" />
     <Content Include="WebForm2.aspx" />
+    <Content Include="Adnmintest.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\Add_Book.aspx.cs">
+      <DependentUpon>Add_Book.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Add_Book.aspx.designer.cs">
+      <DependentUpon>Add_Book.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Booksdisplay\Bussinessbooks.aspx.cs">
+      <DependentUpon>Bussinessbooks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Booksdisplay\Bussinessbooks.aspx.designer.cs">
+      <DependentUpon>Bussinessbooks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassLibrary\Bookinsert.cs" />
+    <Compile Include="ForAdmin.Master.cs">
+      <DependentUpon>ForAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForAdmin.Master.designer.cs">
+      <DependentUpon>ForAdmin.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
@@ -109,8 +135,16 @@
     <Compile Include="WebForm2.aspx.designer.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Adnmintest.aspx.cs">
+      <DependentUpon>Adnmintest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adnmintest.aspx.designer.cs">
+      <DependentUpon>Adnmintest.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ForAdmin.Master" />
     <None Include="packages.config" />
     <Content Include="UserIterface.Master" />
     <None Include="Web.Debug.config">
@@ -119,6 +153,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Bookimage\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
